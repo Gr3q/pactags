@@ -19,8 +19,8 @@ class Package(Base):
 class Tag(Base):
     __tablename__ = 'Tags'
 
-    name_id = Column(Text)
-    nice_name = Column(Text, primary_key=True)
+    name_id = Column(Text, primary_key=True)
+    nice_name = Column(Text)
 
 
 t_sqlite_sequence = Table(
